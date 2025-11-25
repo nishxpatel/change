@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World Issues Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header, footer { background: #222; color: #fff; padding: 1rem; }
+    main { padding: 1rem; max-width: 900px; margin: 0 auto; }
+    a { color: #0069d9; }
+    nav a { margin-right: 1rem; color: #fff; text-decoration: none; }
+    section { margin-top: 2rem; }
+    h1, h2, h3 { margin-top: 0; }
+    ul { padding-left: 1.2rem; }
+    .topic { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>World Issues Hub</h1>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#actions">Actions</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>This site is a starting point for understanding major issues in the world and finding concrete ways to act.</p>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>Short explainers plus curated links to deeper resources.</p>
+
+      <div class="topic">
+        <h3>Climate Change</h3>
+        <p>A brief 2–3 sentence summary of why this matters, in your own words.</p>
+        <ul>
+          <li><a href="https://www.ipcc.ch" target="_blank" rel="noopener">IPCC assessment reports</a></li>
+          <li><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions" target="_blank" rel="noopener">Our World in Data: Emissions data</a></li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h3>Global Inequality</h3>
+        <p>Another brief summary here in your own words.</p>
+        <ul>
+          <li><a href="https://wid.world" target="_blank" rel="noopener">World Inequality Database</a></li>
+        </ul>
+      </div>
+
+      <!-- Add more topics as needed -->
+    </section>
+
+    <section id="actions">
+      <h2>Actions</h2>
+      <p>Ways to translate concern into concrete steps.</p>
+      <ul>
+        <li><strong>Contact representatives:</strong> Link to tools that help people find and contact their elected officials.</li>
+        <li><strong>Support local organizations:</strong> Link to local mutual aid, NGO directories, etc.</li>
+        <li><strong>Change personal systems:</strong> Link to guides on reducing footprint, community organizing, or donating effectively.</li>
+      </ul>
+    </section>
+
+    <section id="comments">
+      <h2>Discussion</h2>
+      <p>Comments will go here (to be added with Giscus later).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> World Issues Hub</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
