@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Action | Infini-Change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0;}
+    header, footer { background: #222; color: #fff; padding: 1rem;}
+    main { padding: 1rem; max-width: 900px; margin: 0 auto;}
+    nav { background: #333; padding: 0.5rem 1rem; display: flex; justify-content: center;}
+    nav a { margin: 0 1rem; color: #fff; text-decoration: none; font-weight: bold; padding: 0.3rem 0.6rem; border-radius: 3px; transition: background 0.2s;}
+    nav a:hover { background: #0069d9; color: #fff; }
+    h2 { margin-top: 1.2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Infini-Change</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="action.html">Action</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Actions & Resources</h2>
+    <p>Find practical steps and actionable resources to turn your knowledge into real-world change:</p>
+    <ul>
+      <li><strong>Contact Representatives:</strong> <a href="https://www.commoncause.org/find-your-representative/" target="_blank">Find and contact your legislator</a></li>
+      <li><strong>Support Local Organizing:</strong> <a href="https://mutualaiddisasterrelief.org/resources/" target="_blank">Mutual Aid Directory</a></li>
+      <li><strong>Live Systemic Change:</strong> <a href="https://www.collectiveaction.tech/resources/" target="_blank">Community organizing resources</a></li>
+      <!-- Add more resource links as you find them -->
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Infini-Change</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

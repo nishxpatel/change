@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Education | Infini-Change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0;}
+    header, footer { background: #222; color: #fff; padding: 1rem;}
+    main { padding: 1rem; max-width: 900px; margin: 0 auto;}
+    nav { background: #333; padding: 0.5rem 1rem; display: flex; justify-content: center; }
+    nav a { margin: 0 1rem; color: #fff; text-decoration: none; font-weight: bold; padding: 0.3rem 0.6rem; border-radius: 3px; transition: background 0.2s; }
+    nav a:hover { background: #0069d9; color: #fff; }
+    h2, h3 { margin-top: 1.2rem;}
+    .topic { margin-bottom: 2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Infini-Change</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="action.html">Action</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Education Program</h2>
+    <p>Step-by-step guides and curated resources about world systems and transformative ideas:</p>
+    <div class="topic">
+      <h3>Contradictions of Current Systems (Anti-Capitalism)</h3>
+      <p>Discover the flaws and contradictions within present economic and political systems, and why change is urgently needed.</p>
+      <ul>
+        <li><a href="https://www.marxists.org" target="_blank">Marxist theory (resource)</a></li>
+        <!-- Add more links/resources -->
+      </ul>
+    </div>
+    <div class="topic">
+      <h3>Introduction to Socialism</h3>
+      <p>Learn what socialism is, how it differs from capitalism, and imagine transformative futures.</p>
+      <ul>
+        <li><a href="https://democraticleft.wixsite.com/dsa-intro" target="_blank">Basic intro from Democratic Socialists</a></li>
+      </ul>
+    </div>
+    <!-- Add more modules/topics as you develop them -->
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Infini-Change</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
