@@ -12,10 +12,10 @@
   3. Navigation menu with links to all pages
 
   TO ADD A NEW NAV LINK:
-  1. Copy one of the existing <a class="nav-link"> blocks
-  2. Change the URL in href="{{ '/pagename' | relative_url }}"
-  3. Update the {% if %} condition to match
-  4. Change the icon code (&#number;) - find codes at htmlarrows.com
+  1. Copy one of the existing nav-link anchor blocks
+  2. Change the URL path in the href attribute
+  3. Update the if-condition to match your page URL
+  4. Change the icon code - find codes at htmlarrows.com
   5. Change the link text
 
   ============================================================================
@@ -31,8 +31,8 @@
 
     <!--
       LOGO & SITE TITLE
-      - Wrapped in <a> tag so clicking it goes to homepage
-      - {{ '/' | relative_url }} creates the correct home URL
+      - Wrapped in anchor tag so clicking it goes to homepage
+      - relative_url filter creates the correct home URL
       - The image is the infinity symbol logo
     -->
     <a href="{{ '/' | relative_url }}" class="logo-container">
@@ -50,7 +50,7 @@
       MOBILE MENU TOGGLE (Hamburger Button)
       - Only visible on mobile devices (controlled by CSS)
       - The onclick toggles the 'active' class on the nav menu
-      - &#9776; is the HTML code for the hamburger (☰) icon
+      - The HTML entity 9776 is the hamburger icon
     -->
     <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('active')">
       &#9776;
@@ -68,9 +68,9 @@
 
       <!--
         HOME LINK
-        - {% if page.url == '/' %} active{% endif %} adds 'active' class when on homepage
+        - The if-condition adds 'active' class when on homepage
         - This highlights the current page in the navigation
-        - &#127968; is the house emoji icon
+        - HTML entity 127968 is the house emoji icon
       -->
       <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">
         <span class="nav-icon">&#127968;</span>
@@ -80,7 +80,7 @@
       <!--
         ABOUT LINK
         - Checks for both '/about' and '/about/' to handle trailing slashes
-        - &#128100; is the person silhouette emoji
+        - HTML entity 128100 is the person silhouette emoji
       -->
       <a href="{{ '/about' | relative_url }}" class="nav-link{% if page.url == '/about' or page.url == '/about/' %} active{% endif %}">
         <span class="nav-icon">&#128100;</span>
@@ -89,7 +89,7 @@
 
       <!--
         EDUCATION LINK
-        - &#128218; is the book emoji
+        - HTML entity 128218 is the book emoji
       -->
       <a href="{{ '/education' | relative_url }}" class="nav-link{% if page.url == '/education' or page.url == '/education/' %} active{% endif %}">
         <span class="nav-icon">&#128218;</span>
@@ -98,7 +98,7 @@
 
       <!--
         ACTION LINK
-        - &#128170; is the flexed bicep emoji
+        - HTML entity 128170 is the flexed bicep emoji
       -->
       <a href="{{ '/action' | relative_url }}" class="nav-link{% if page.url == '/action' or page.url == '/action/' %} active{% endif %}">
         <span class="nav-icon">&#128170;</span>
@@ -107,12 +107,11 @@
 
       <!--
         TO ADD A NEW NAVIGATION LINK:
-        Copy and paste this template, then modify:
-
-        <a href="{{ '/your-page' | relative_url }}" class="nav-link{% if page.url == '/your-page' or page.url == '/your-page/' %} active{% endif %}">
-          <span class="nav-icon">&#128204;</span>
-          Your Page Name
-        </a>
+        Copy one of the nav-link anchor elements above and modify:
+        1. The href path (e.g., '/your-page')
+        2. The page.url check in the if-condition
+        3. The icon HTML entity number
+        4. The link text
 
         Icon codes: https://www.htmlsymbols.xyz/unicode/
       -->
